@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router";
 import PlantCard from "../components/PlantCard";
+import PlantDetails from "./PlantDetails";
 
 const Home = () => {
   const plantData = useLoaderData();
@@ -36,6 +37,8 @@ const Home = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 p-4">
   {featuredPlant.map((data) => (
     <PlantCard data={data} key={data.plantId} />
+   
+    
   ))}
 </div>
 

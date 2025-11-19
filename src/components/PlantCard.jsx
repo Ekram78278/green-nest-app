@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router';
 
 const dataCard = ({data}) => {
     return (
@@ -42,9 +43,9 @@ const dataCard = ({data}) => {
           <strong>Stock:</strong> {data.availableStock}
         </span>
       </div>
-      <button className="w-full bg-gradient-to-br from-green-700 to-green-900 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-sm font-semibold hover:from-green-900 hover:to-green-700 transition-all duration-300">
+      <Link to={`/plant-details/${data.plantId}`} className="w-full bg-gradient-to-br from-green-700 to-green-900 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-sm font-semibold hover:from-green-900 hover:to-green-700 transition-all duration-300">
         Learn More - ${data.price}
-      </button>
+      </Link>
     </div>
   </div>
 </div>
