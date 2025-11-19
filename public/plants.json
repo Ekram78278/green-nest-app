@@ -1,0 +1,135 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "/src/assets/snake-plant.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Pothos",
+    "category": "Trailing/Climber",
+    "price": 15,
+    "rating": 4.7,
+    "availableStock": 25,
+    "careLevel": "Very Easy",
+    "description": "A classic, durable houseplant with heart-shaped leaves that can tolerate neglect and low light.",
+    "image": "/src/assets/pothos.png",
+    "providerName": "The Green Thumb Nursery"
+  },
+  {
+    "plantId": 3,
+    "plantName": "ZZ Plant (Zamioculcas)",
+    "category": "Low-Light Tolerant",
+    "price": 25,
+    "rating": 4.9,
+    "availableStock": 8,
+    "careLevel": "Easy",
+    "description": "Known for its waxy, dark-green leaves, it’s one of the hardiest plants, needing very infrequent watering.",
+    "image": "/src/assets/zz-plants.png",
+    "providerName": "EcoFlora Home"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Peace Lily",
+    "category": "Flowering/Air Purifier",
+    "price": 22,
+    "rating": 4.6,
+    "availableStock": 15,
+    "careLevel": "Medium",
+    "description": "Features elegant white 'flowers' (bracts) and signals its thirst with dramatic drooping leaves.",
+    "image": "/src/assets/peace-lily.png",
+    "providerName": "BloomBox Retail"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Spider Plant",
+    "category": "Air Purifier/Hanging",
+    "price": 12,
+    "rating": 4.5,
+    "availableStock": 30,
+    "careLevel": "Easy",
+    "description": "Produces 'spiderettes' on long stems, making it great for hanging baskets. Safe for pets.",
+    "image": "/src/assets/spider-plant.png",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Monstera Deliciosa",
+    "category": "Tropical/Foliage",
+    "price": 35,
+    "rating": 4.9,
+    "availableStock": 5,
+    "careLevel": "Medium",
+    "description": "The iconic Swiss Cheese Plant, famous for its large, perforated, glossy leaves. Needs space to grow.",
+    "image": "/src/assets/Monstera-Deliciosa.png",
+    "providerName": "Jungle Home Plants"
+  },
+  {
+    "plantId": 7,
+    "plantName": "Aloe Vera",
+    "category": "Succulent/Medicinal",
+    "price": 14,
+    "rating": 4.7,
+    "availableStock": 18,
+    "careLevel": "Easy",
+    "description": "A sun-loving succulent with medicinal properties; the gel is used for burns and skin care.",
+    "image": "/src/assets/aloe-vera.png",
+    "providerName": "Desert Oasis Plants"
+  },
+  {
+    "plantId": 8,
+    "plantName": "Rubber Plant (Burgundy)",
+    "category": "Tree/Foliage",
+    "price": 28,
+    "rating": 4.6,
+    "availableStock": 12,
+    "careLevel": "Medium",
+    "description": "A stylish, architectural plant with large, glossy, dark burgundy-green leaves. Grows into a small tree.",
+    "image": "/src/assets/rubber-plant.png",
+    "providerName": "The Green Thumb Nursery"
+  },
+  {
+    "plantId": 9,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Tree/Statement",
+    "price": 45,
+    "rating": 4.3,
+    "availableStock": 4,
+    "careLevel": "Hard",
+    "description": "A very popular statement plant known for its large, violin-shaped leaves. Can be sensitive to changes.",
+    "image": "/src/assets/Fiddle-Leaf-Fig.png",
+    "providerName": "Luxe Leaf Co."
+  },
+  {
+    "plantId": 10,
+    "plantName": "Philodendron (Heartleaf)",
+    "category": "Trailing/Climber",
+    "price": 16,
+    "rating": 4.8,
+    "availableStock": 20,
+    "careLevel": "Very Easy",
+    "description": "A fast-growing, low-maintenance vine with classic heart-shaped leaves, perfect for shelves and hanging.",
+    "image": "/src/assets/Philodendron.png",
+    "providerName": "EcoFlora Home"
+  },
+  {
+    "plantId": 11,
+    "plantName": "Chinese Money Plant (Pilea)",
+    "category": "Unique Foliage",
+    "price": 19,
+    "rating": 4.7,
+    "availableStock": 9,
+    "careLevel": "Medium",
+    "description": "Features distinctive, pancake-like circular leaves. Easy to propagate and share with friends.",
+    "image": "/src/assets/money-plant.png",
+    "providerName": "BloomBox Retail"
+  }
+
+]
