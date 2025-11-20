@@ -1,12 +1,31 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router";
-import { toast} from "react-toastify";
+import { IoIosEye, IoIosEyeOff } from "react-icons/io";
+import { Link, useNavigate } from "react-router";
+import { toast } from "react-toastify";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
-  const { createUser, setUser } = useContext(AuthContext);
+  const { createUser, setUser,signInWithGoogle } = useContext(AuthContext);
   const [nameError, SetNameError] = useState(" ");
   const [error, setError] = useState(" ");
+  const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
+  const handleShow = (e) => {
+    e.preventDefault();
+    setShowPassword(!showPassword);
+  };
+
+  const handleRegisterGoogle = () => {
+    signInWithGoogle()
+    .then((res) => {
+      const user = res.user
+      setUser(user);
+    }).catch((error) => {
+      const errorMessage = error.message;
+      toast(errorMessage);
+    });
+  }
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -40,6 +59,7 @@ const Register = () => {
         const user = res.user;
         setUser(user);
         console.log(res);
+        navigate('/')
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -51,9 +71,9 @@ const Register = () => {
     <div className="hero  min-h-screen">
       <div className="hero-content flex-col lg:flex-row">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Login now!</h1>
+          <h1 className="text-5xl font-bold">Register Now!</h1>
           <p className="py-6">
-            Login to your profile and shop your indoor plant for purifying your
+            Create your profile and shop your indoor plant for purifying your
             environment fresh your air take care of your inside.
           </p>
         </div>
@@ -93,13 +113,18 @@ const Register = () => {
                 {/* password */}
 
                 <label className="label">Password</label>
-                <input
-                  type="password"
-                  className="input"
-                  name="password"
-                  placeholder="Password"
-                  required
-                />
+                <div className="relative">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    className="input"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                  <button onClick={handleShow} className="absolute btn btn-xs top-2 right-7">
+                    {showPassword ? <IoIosEyeOff /> : <IoIosEye />}
+                  </button>
+                </div>
                 {error && <p className="text-xs text-error">{error}</p>}
 
                 <div>
@@ -116,7 +141,7 @@ const Register = () => {
                 <button className="btn bg-green-700 text-white mt-4">
                   Register
                 </button>
-                <button className="btn bg-white text-black border-[#e5e5e5]">
+                <Link onClick={handleRegisterGoogle} to='/' className="btn bg-white text-black border-[#e5e5e5]">
                   <svg
                     aria-label="Google logo"
                     width="16"
@@ -145,13 +170,12 @@ const Register = () => {
                     </g>
                   </svg>
                   Sign Up with Google
-                </button>
+                </Link>
               </fieldset>
             </form>
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
