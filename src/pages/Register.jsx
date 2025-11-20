@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { AuthContext } from "../Provider/AuthProvider";
 
 const Register = () => {
-  const { createUser, setUser,signInWithGoogle } = useContext(AuthContext);
+  const { createUser, setUser,signInWithGoogle} = useContext(AuthContext);
   const [nameError, SetNameError] = useState(" ");
   const [error, setError] = useState(" ");
   const [showPassword, setShowPassword] = useState(false);
@@ -60,6 +60,7 @@ const Register = () => {
         setUser(user);
         console.log(res);
         navigate('/')
+        
       })
       .catch((error) => {
         const errorMessage = error.message;

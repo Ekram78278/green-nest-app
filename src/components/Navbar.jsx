@@ -39,7 +39,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex="-1"
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="relative menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
                 <MyLink to={"/"}>Home</MyLink>
@@ -70,9 +70,9 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           {
-            user ? (<button onClick={handleLogout} className="btn bg-green-700 text-white" > 
+            user ? (<Link to='/login' onClick={handleLogout} className="btn bg-green-700 text-white" > 
                 Log-Out
-            </button>) : (<Link to='/login' className="btn bg-green-700 text-white">Login</Link>)
+            </Link>) : (<Link to='/login' className="btn bg-green-700 text-white">Login or Register</Link>)
           }
           
         </div>

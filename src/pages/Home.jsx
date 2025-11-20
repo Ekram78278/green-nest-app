@@ -10,15 +10,11 @@ const Home = () => {
   return (
     <div className="">
     <div className="relative">
-    {/* <img
-      className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover"
-      src="/src/assets/hero-image.jpg"
-      alt="Hero"
-    /> */}
+    
     <Slider></Slider>
     
 
-    {/* Desktop: Text on image | Mobile: Text below image */}
+    {/* Desktop: Text on image  Mobile: Text below image */}
     <div className="sm:absolute sm:top-1/4 sm:right-10 sm:max-w-md backdrop-blur-lg bg-white/70 p-6 sm:p-8 sm:rounded-lg sm:shadow-lg -mt-10 sm:mt-0 mx-4 sm:mx-0 rounded-lg shadow-lg sm:shadow-none relative z-10">
       <h1 className="text-gray-900 text-2xl sm:text-3xl font-bold leading-tight">
         WELCOME TO SPRING STORE PRODUCTS

@@ -6,6 +6,7 @@ import Plants from "../pages/Plants";
 import Profile from "../pages/Profile";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -23,11 +24,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile></Profile>,
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
+        ,
       },
       {
         path: "/plant-details/:id",
-        element: <PlantDetails></PlantDetails>,
+        element: <PrivateRoute><PlantDetails></PlantDetails></PrivateRoute>,
       },
       {
         path:'/login',
@@ -38,5 +40,11 @@ export const router = createBrowserRouter([
       element:<Register></Register>
      }
     ],
+
+    
   },
+  {
+    path:'/*',
+    element:<div className="flex flex-col justify-center items-center text-8xl">Error 404 !!</div>
+  }
 ]);
