@@ -17,8 +17,8 @@ export const router = createBrowserRouter([
         index: true,
         element: <Home></Home>,
         loader: async () => ({
-    plantData: await fetch("/public/plants.json").then(res => res.json()),
-    plantTips: await fetch("/public/PlantTips.json").then(res => res.json())
+    plantData: await fetch("/plants.json").then(res => res.json()),
+    plantTips: await fetch("/PlantTips.json").then(res => res.json())
   })   
       },
       {
