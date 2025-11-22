@@ -1,0 +1,82 @@
+[
+  {
+    "plantName": "Snake Plant (Sansevieria)",
+    "careLevel": "Easy",
+    "watering": {
+      "frequency": "Every 2-4 weeks",
+      "tip": "Allow the soil to dry out completely between waterings. Overwatering is the biggest killer."
+    },
+    "sunlight": {
+      "level": "Low to Bright Indirect",
+      "tip": "Extremely versatile, but prefers bright, indirect light for best growth. Avoid direct, harsh afternoon sun."
+    },
+    "fertilizing": {
+      "frequency": "Once during spring and summer",
+      "tip": "Use a balanced liquid houseplant fertilizer, diluted to half-strength, during the growing season."
+    }
+  },
+  {
+    "plantName": "Pothos (Devil's Ivy)",
+    "careLevel": "Very Easy",
+    "watering": {
+      "frequency": "Every 1-2 weeks",
+      "tip": "Water when the top inch or two of soil is dry. Leaves will droop dramatically when thirsty, which is a good indicator."
+    },
+    "sunlight": {
+      "level": "Low to Medium Indirect",
+      "tip": "Tolerates low light, but its variegation (color) will be more pronounced in brighter light."
+    },
+    "fertilizing": {
+      "frequency": "Monthly during spring and summer",
+      "tip": "A standard houseplant food is sufficient. Reduce frequency in fall and winter."
+    }
+  },
+  {
+    "plantName": "ZZ Plant (Zamioculcas)",
+    "careLevel": "Easy",
+    "watering": {
+      "frequency": "Every 3-5 weeks",
+      "tip": "Treat it like a succulent. It stores water in its thick rhizomes, so err on the side of underwatering."
+    },
+    "sunlight": {
+      "level": "Low to Bright Indirect",
+      "tip": "Thrives in low-light environments but will grow faster with more light. Protect from intense direct sun."
+    },
+    "fertilizing": {
+      "frequency": "Once or twice a year (summer)",
+      "tip": "Requires very little fertilizer. A slow-release granule or highly diluted liquid works best."
+    }
+  },
+  {
+    "plantName": "Peace Lily",
+    "careLevel": "Medium",
+    "watering": {
+      "frequency": "Weekly",
+      "tip": "Keep the soil consistently moist, but not soggy. Use distilled or filtered water to avoid brown leaf tips."
+    },
+    "sunlight": {
+      "level": "Low to Medium Indirect",
+      "tip": "Prefers shade or indirect light. Too much sun can burn the leaves, too little light reduces flowering."
+    },
+    "fertilizing": {
+      "frequency": "Every 6-8 weeks during growing season",
+      "tip": "Use a fertilizer higher in Phosphorus to encourage blooming. Stop fertilizing in winter."
+    }
+  },
+  {
+    "plantName": "Monstera Deliciosa",
+    "careLevel": "Medium",
+    "watering": {
+      "frequency": "Every 1-2 weeks",
+      "tip": "Water thoroughly once the top third of the soil is dry. They appreciate high humidity."
+    },
+    "sunlight": {
+      "level": "Bright Indirect",
+      "tip": "Needs bright light to develop the characteristic 'splits' (fenestrations) in its leaves."
+    },
+    "fertilizing": {
+      "frequency": "Monthly from spring to early fall",
+      "tip": "A general-purpose houseplant fertilizer will support its fast growth."
+    }
+  }
+]

@@ -3,9 +3,10 @@ import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import { Link, useNavigate } from "react-router";
 import { toast } from "react-toastify";
 import { AuthContext } from "../Provider/AuthProvider";
+import Spinner from "../components/Spinner";
 
 const Register = () => {
-  const { createUser, setUser,signInWithGoogle} = useContext(AuthContext);
+  const { createUser, setUser,signInWithGoogle, loading} = useContext(AuthContext);
   const [nameError, SetNameError] = useState(" ");
   const [error, setError] = useState(" ");
   const [showPassword, setShowPassword] = useState(false);
@@ -15,6 +16,13 @@ const Register = () => {
     e.preventDefault();
     setShowPassword(!showPassword);
   };
+   if (loading) {
+    return (
+      <div>
+        <Spinner></Spinner>
+      </div>
+    );
+  }
 
   const handleRegisterGoogle = () => {
     signInWithGoogle()

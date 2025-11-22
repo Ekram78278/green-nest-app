@@ -47,7 +47,7 @@ const FooterElement = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by ACME
+            Copyright © {new Date().getFullYear()} - All right reserved by GreenNest
             Industries Ltd
           </p>
         </aside>

@@ -2,10 +2,25 @@ import { useLoaderData } from "react-router";
 import PlantCard from "../components/PlantCard";
 import PlantDetails from "./PlantDetails";
 import Slider from "../components/Slider";
+import { useContext } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
+import Spinner from "../components/Spinner";
 
 
 const Home = () => {
-  const plantData = useLoaderData();
+  const {plantData, plantTips} = useLoaderData();
+  const {loading} = useContext(AuthContext);
+
+   if (loading) {
+    return (
+      <div>
+        <Spinner></Spinner>
+      </div>
+    );
+  }
+  
+  console.log(plantTips)
+  console.log(plantData);
   const featuredPlant = plantData.slice(0,8)
   return (
     <div className="">
@@ -41,6 +56,45 @@ const Home = () => {
     
   ))}
 </div>
+
+<div>
+  <div className="flex flex-col justify-center ">
+    <h1 className="text-3xl font-bold items-center mx-auto text-green-700">Plant Care Tips </h1>   
+  </div>
+  <div className="grid md:grid-cols-3 grid-cols-1 space-y-5">
+    {
+      plantTips.map((data) =>( <div className="card w-96 bg-base-100 card-md shadow-sm mx-auto mt-4">
+  <div className="card-body">
+    <h2 className="card-title">{data.plantName}</h2>
+    <p> <span className="font-semibold text-green-800">Sunlight Level:</span>  {data.sunlight.level} </p>
+    <p> <span className="font-semibold text-green-800">Fertilizing:</span>  {data.fertilizing.frequency} </p>
+    <p> <span className="font-semibold text-green-800">Watering:</span>  {data.watering.frequency} </p>
+    
+  </div>
+</div>) )
+    }
+
+  </div>
+  <div
+  className="hero min-h-screen mt-10"
+  style={{
+    backgroundImage:
+      "url(/src/assets/rubber-plant.png)",
+  }}
+>
+  <div className="hero-overlay"></div>
+  <div className="hero-content text-neutral-content text-center">
+    <div className="max-w-md">
+      <h1 className="mb-5 text-5xl font-bold">Plant of the Week</h1>
+      <p className="mb-5">
+        A stylish, architectural plant with large, glossy, dark burgundy-green leaves. Grows into a small tree.
+      </p>
+     
+    </div>
+  </div>
+</div>
+</div>
+
 
     </div>
   );

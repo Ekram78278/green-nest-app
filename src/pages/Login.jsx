@@ -4,9 +4,10 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { toast } from "react-toastify";
 import Slider from "../components/Slider";
 import { AuthContext } from "../Provider/AuthProvider";
+import Spinner from "../components/Spinner";
 
 const Login = () => {
-  const { signInUser, forgetPassword } = useContext(AuthContext);
+  const { signInUser, forgetPassword,loading } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
@@ -18,6 +19,14 @@ const Login = () => {
     e.preventDefault();
     setShowPassword(!showPassword);
   };
+
+   if (loading) {
+    return (
+      <div>
+        <Spinner></Spinner>
+      </div>
+    );
+  }
 
   const resetPassword = () => {
     const email = emailRef.current.value;

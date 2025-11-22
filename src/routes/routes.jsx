@@ -16,11 +16,15 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Home></Home>,
-        loader: () => fetch("/public/plants.json"),
+        loader: async () => ({
+    plantData: await fetch("/public/plants.json").then(res => res.json()),
+    plantTips: await fetch("/public/PlantTips.json").then(res => res.json())
+  })   
       },
       {
         path: "/plants",
         element: <Plants></Plants>,
+        
       },
       {
         path: "/profile",
