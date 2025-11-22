@@ -8,7 +8,7 @@
     "availableStock": 10,
     "careLevel": "Easy",
     "description": "A hardy plant that purifies indoor air and thrives in low light.",
-    "image": "/src/assets/snake-plant.png",
+    "image": "/snake-plant.png",
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -20,7 +20,7 @@
     "availableStock": 25,
     "careLevel": "Very Easy",
     "description": "A classic, durable houseplant with heart-shaped leaves that can tolerate neglect and low light.",
-    "image": "/src/assets/pothos.png",
+    "image": "/pothos.png",
     "providerName": "The Green Thumb Nursery"
   },
   {
@@ -32,7 +32,7 @@
     "availableStock": 8,
     "careLevel": "Easy",
     "description": "Known for its waxy, dark-green leaves, it’s one of the hardiest plants, needing very infrequent watering.",
-    "image": "/src/assets/zz-plants.png",
+    "image": "/zz-plants.png",
     "providerName": "EcoFlora Home"
   },
   {
@@ -44,7 +44,7 @@
     "availableStock": 15,
     "careLevel": "Medium",
     "description": "Features elegant white 'flowers' (bracts) and signals its thirst with dramatic drooping leaves.",
-    "image": "/src/assets/peace-lily.png",
+    "image": "/peace-lily.png",
     "providerName": "BloomBox Retail"
   },
   {
@@ -56,7 +56,7 @@
     "availableStock": 30,
     "careLevel": "Easy",
     "description": "Produces 'spiderettes' on long stems, making it great for hanging baskets. Safe for pets.",
-    "image": "/src/assets/spider-plant.png",
+    "image": "/spider-plant.png",
     "providerName": "UrbanGreen Studio"
   },
   {
@@ -68,7 +68,7 @@
     "availableStock": 5,
     "careLevel": "Medium",
     "description": "The iconic Swiss Cheese Plant, famous for its large, perforated, glossy leaves. Needs space to grow.",
-    "image": "/src/assets/Monstera-Deliciosa.png",
+    "image": "/Monstera-Deliciosa.png",
     "providerName": "Jungle Home Plants"
   },
   {
@@ -80,7 +80,7 @@
     "availableStock": 18,
     "careLevel": "Easy",
     "description": "A sun-loving succulent with medicinal properties; the gel is used for burns and skin care.",
-    "image": "/src/assets/aloe-vera.png",
+    "image": "/aloe-vera.png",
     "providerName": "Desert Oasis Plants"
   },
   {
@@ -92,7 +92,7 @@
     "availableStock": 12,
     "careLevel": "Medium",
     "description": "A stylish, architectural plant with large, glossy, dark burgundy-green leaves. Grows into a small tree.",
-    "image": "/src/assets/rubber-plant.png",
+    "image": "/rubber-plant.png",
     "providerName": "The Green Thumb Nursery"
   },
   {
@@ -104,7 +104,7 @@
     "availableStock": 4,
     "careLevel": "Hard",
     "description": "A very popular statement plant known for its large, violin-shaped leaves. Can be sensitive to changes.",
-    "image": "/src/assets/Fiddle-Leaf-Fig.png",
+    "image": "/Fiddle-Leaf-Fig.png",
     "providerName": "Luxe Leaf Co."
   },
   {
@@ -116,7 +116,7 @@
     "availableStock": 20,
     "careLevel": "Very Easy",
     "description": "A fast-growing, low-maintenance vine with classic heart-shaped leaves, perfect for shelves and hanging.",
-    "image": "/src/assets/Philodendron.png",
+    "image": "/Philodendron.png",
     "providerName": "EcoFlora Home"
   },
   {
@@ -128,7 +128,7 @@
     "availableStock": 9,
     "careLevel": "Medium",
     "description": "Features distinctive, pancake-like circular leaves. Easy to propagate and share with friends.",
-    "image": "/src/assets/money-plant.png",
+    "image": "/money-plant.png",
     "providerName": "BloomBox Retail"
   }
 
