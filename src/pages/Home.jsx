@@ -5,6 +5,7 @@ import Slider from "../components/Slider";
 import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import Spinner from "../components/Spinner";
+import rubberPlantImage from "../assets/rubber-plant.png";
 
 
 const Home = () => {
@@ -79,7 +80,7 @@ const Home = () => {
   className="hero min-h-screen mt-10"
   style={{
     backgroundImage:
-      "url(/src/assets/rubber-plant.png)",
+      `url(${rubberPlantImage})`,
   }}
 >
   <div className="hero-overlay"></div>
