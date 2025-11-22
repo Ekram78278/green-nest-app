@@ -1,16 +1,30 @@
 import { Link } from "react-router";
+import { useState } from "react";
 
 const PlantCard = ({ data }) => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <div className="relative w-full h-[350px] sm:h-[400px] group cursor-pointer overflow-hidden">
+    <div
+      className="relative w-full h-[350px] sm:h-[400px] group cursor-pointer overflow-hidden"
+      onClick={handleClick}
+    >
       {/* Top Half - Slides Down */}
-      <div className="absolute w-full h-1/2 flex flex-col transition-all duration-500 translate-y-1/2 group-hover:translate-y-0 z-10">
+      <div className={`absolute w-full h-1/2 flex flex-col transition-all duration-500 z-10 ${
+        isActive ? 'translate-y-0' : 'translate-y-1/2'
+      } sm:translate-y-1/2 sm:group-hover:translate-y-0`}>
         {/* Full Width Image */}
         <div className="flex-1 w-full overflow-hidden">
           <img
             src={data.image}
             alt={data.plantName}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            className={`w-full h-full object-cover transition-transform duration-500 ${
+              isActive ? 'scale-110' : ''
+            } sm:group-hover:scale-110`}
           />
         </div>
 
@@ -26,7 +40,9 @@ const PlantCard = ({ data }) => {
       </div>
 
       {/* Bottom Half - Slides Up */}
-      <div className="absolute w-full h-1/2 bottom-0 bg-white/90 backdrop-blur-sm border border-green-600 flex items-center justify-center transition-all duration-500 -translate-y-1/2 group-hover:translate-y-0 shadow-2xl">
+      <div className={`absolute w-full h-1/2 bottom-0 bg-white/90 backdrop-blur-sm border border-green-600 flex items-center justify-center transition-all duration-500 shadow-2xl ${
+        isActive ? 'translate-y-0' : '-translate-y-1/2'
+      } sm:-translate-y-1/2 sm:group-hover:translate-y-0`}>
         <div className="p-3 sm:p-4 md:p-6 w-full">
           <p className="text-gray-800 text-[10px] sm:text-xs leading-relaxed mb-2 sm:mb-4 line-clamp-3">
             {data.description}
@@ -41,7 +57,8 @@ const PlantCard = ({ data }) => {
           </div>
           <Link
             to={`/plant-details/${data.plantId}`}
-            className="w-full bg-gradient-to-br from-green-700 to-green-900 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-sm font-semibold hover:from-green-900 hover:to-green-700 transition-all duration-300"
+            className="w-full bg-gradient-to-br from-green-700 to-green-900 text-white px-3 sm:px-6 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-sm font-semibold hover:from-green-900 hover:to-green-700 transition-all duration-300 block text-center"
+            onClick={(e) => e.stopPropagation()}
           >
             Learn More - ${data.price}
           </Link>

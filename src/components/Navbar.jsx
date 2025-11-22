@@ -75,7 +75,6 @@ const Navbar = () => {
         <div className="navbar-end">
     {user ? (
       <div className="dropdown dropdown-end">
-        {/* Profile Picture Trigger */}
         <div
           tabIndex={0}
           role="button"

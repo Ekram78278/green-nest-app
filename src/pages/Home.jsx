@@ -50,13 +50,11 @@ const Home = () => {
       Explore All the Trending Plants for Purify Your Indoor Air
     </p>
   </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 p-4">
-  {featuredPlant.map((data) => (
-    <PlantCard data={data} key={data.plantId} />
-   
-    
-  ))}
-</div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 p-4">
+    {featuredPlant.map((data) => (
+      <PlantCard data={data} key={data.plantId} />
+    ))}
+  </div>
 
 <div>
   <div className="flex flex-col justify-center ">
