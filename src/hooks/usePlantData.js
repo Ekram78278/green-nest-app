@@ -6,7 +6,7 @@ const usePlants = () => {
     const [error, setError] = useState(null);
 
     useEffect(()=> {
-        fetch('/public/plants.json')
+        fetch('/plants.json')
         .then((res) => {
             if(!res.ok){
                 throw new Error ('Failed to fetch data');

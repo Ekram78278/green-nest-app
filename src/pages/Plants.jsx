@@ -20,7 +20,7 @@ const Plants = () => {
     ? plants.filter((data) => data.plantName.toLocaleLowerCase().includes(term))
     : plants;
 
-  if (searchedPlants === 0)
+  if (searchedPlants.length === 0)
     return (
       <div className="mx-auto flex flex-col justify-center items-center">
         <p className="text-green-700 font-bold text-5xl">
